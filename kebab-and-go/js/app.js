@@ -236,6 +236,14 @@ function render() {
     document.getElementById('inicio').hidden = !enInicio;
     document.getElementById('comparador').hidden = enInicio;
 
+    // Botón de la barra superior: "Hacer pedido" en la portada, "Volver al inicio" en el comparador
+    const botonNav = document.getElementById('btn-nav-pedido');
+
+    botonNav.textContent = enInicio ? 'Hacer pedido →' : '← Volver al inicio';
+    botonNav.onclick = function () {
+        ir(enInicio ? 'menu' : 'inicio');
+    };
+
     if (enInicio) {
         return;
     }

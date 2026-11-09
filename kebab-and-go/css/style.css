@@ -114,16 +114,6 @@ header p {
     opacity: 0.85;
 }
 
-.sim {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 4px 10px;
-    background: var(--amarillo);
-    color: #140a02;
-    font-size: 0.92rem;
-    font-weight: 700;
-}
-
 .btn-tema {
     padding: 6px 12px;
     border: 1px solid #ffffff;
