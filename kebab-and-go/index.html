@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>KEBAB&amp;GO</title>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+
+    <!-- ==================== PANTALLA 1: INICIO ==================== -->
+    <div id="inicio">
+
+        <section class="hero">
+
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/poster.jpg">
+                <source src="assets/video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-capa"></div>
+
+            <button class="btn-tema" type="button">Modo claro</button>
+
+            <div class="hero-contenido">
+                <img class="logo" src="assets/logo.png" alt="Logo de KEBAB&GO">
+                <h1>KEBAB <span>&amp;GO</span></h1>
+                <p class="lema">Del móvil a tu <span>casa</span></p>
+                <p class="desc">
+                    Elige tu pedido en uno de los kebabs de tu zona y compara cuánto te cuesta
+                    recogerlo en el local o pedirlo por Glovo, Uber Eats y Just Eat.
+                </p>
+                <button class="btn-grande" type="button" onclick="ir('menu')">Comparar precios →</button>
+            </div>
+
+        </section>
+
+        <section class="como">
+            <h2>El problema</h2>
+
+            <div class="pasos">
+                <div class="paso">
+                    <span>1</span>
+                    <h3>Tiempo de búsqueda</h3>
+                    <p>Se tarda mucho en buscar kebabs que sean buenos y a un precio justo.</p>
+                </div>
+                <div class="paso">
+                    <span>2</span>
+                    <h3>Locales poco fiables</h3>
+                    <p>No es fácil saber qué locales son confiables y rápìdos.</p>
+                </div>
+                <div class="paso">
+                    <span>3</span>
+                    <h3>Kebabs que decepcionan</h3>
+                    <p>Se termina pagando más y recibiendo menos de lo esperado.</p>
+                </div>
+            </div>
+            <h2>¿Cómo se soluciona?</h2>
+
+            <div class="pasos">
+                <div class="paso">
+                    <span>1</span>
+                    <h3>Datos unificados</h3>
+                    <p>Concentramos datos de locales, precios y calidad en una sola app.</p>
+                </div>
+                <div class="paso">
+                    <span>2</span>
+                    <h3>Elección fácil</h3>
+                    <p>Facilitamos la elección rápida y segura para el usuario.</p>
+                </div>
+                <div class="paso">
+                    <span>3</span>
+                    <h3>Ahorro</h3>
+                    <p>Ahorra tiempo y dinero eligiendo solo las mejores opciones.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ==================== PANTALLAS 2 Y 3: COMPARADOR ==================== -->
+    <div id="comparador" hidden>
+
+        <div class="wrap">
+
+            <header>
+                <div class="header-top">
+                    <a class="marca" href="#" onclick="ir('inicio'); return false;">
+                        <img src="assets/logo.png" alt="">
+                        <h1>KEBAB <span>&amp;GO</span></h1>
+                    </a>
+                    <button class="btn-tema" type="button">Modo claro</button>
+                </div>
+
+                <p>Compara tu pedido: recoger en local vs. apps de reparto</p>
+                <span class="sim">Prototipo de simulación · precios ficticios</span>
+            </header>
+
+            <div class="steps">
+                <span id="s1" class="on">1. Elige tu pedido</span>
+                <span id="s2">2. Compara precios</span>
+            </div>
+
+            <main id="app"></main>
+
+        </div>
+
+        <div class="bar" id="bar">
+            <div></div>
+        </div>
+
+    </div>
+
+    <script src="js/tema.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

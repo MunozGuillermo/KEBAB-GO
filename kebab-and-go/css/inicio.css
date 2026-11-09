@@ -1,0 +1,145 @@
+/* ==========================================================
+   KEBAB&GO · Página de inicio
+   ========================================================== */
+
+/* ---------- Portada ---------- */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+    overflow: hidden;
+    background: #000000 url("../assets/poster.jpg") center / cover no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Capa oscura para que el texto se lea bien sobre el vídeo */
+.hero-capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.9));
+}
+
+.hero .btn-tema {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(3.5rem, 14vw, 7rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.lema {
+    margin: 12px 0 20px;
+    font-family: var(--fuente-titulos);
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.desc {
+    margin: 0 0 32px;
+    color: #e6e6e6;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.btn-grande {
+    display: inline-block;
+    padding: 16px 36px;
+    border: 0;
+    cursor: pointer;
+    background: var(--ac);
+    color: var(--acx);
+    font-family: var(--fuente-titulos);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-grande:hover {
+    filter: brightness(1.12);
+}
+
+/* ---------- Cómo funciona ---------- */
+.como {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 16px;
+    text-align: center;
+}
+
+.como h2 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.paso {
+    padding: 20px;
+    border: 1px solid var(--bd);
+    border-top: 4px solid var(--ac);
+    background: var(--card);
+}
+
+.paso span {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: var(--amarillo);
+    color: #140a02;
+    font-family: var(--fuente-titulos);
+    font-size: 1.3rem;
+    line-height: 38px;
+}
+
+.paso h3 {
+    margin: 10px 0 4px;
+    font-weight: 500;
+}
+
+.paso p {
+    margin: 0;
+    color: var(--mut);
+    font-size: 0.9rem;
+}
