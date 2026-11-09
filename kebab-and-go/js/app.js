@@ -88,8 +88,8 @@ function vistaMenu(app, bar) {
 
     RESTAURANTES.forEach(function (x, i) {
         html += `
-            <button class="tab ${i === estado.r ? 'on' : ''}" onclick="elegir(${i})">
-                <b>${x.name}</b>
+            <button class="tab ${i === estado.r ? 'on' : ''}" onclick="elegir(${i})" aria-pressed="${i === estado.r}">
+                <b>${i === estado.r ? '✓ ' : ''}${x.name}</b>
                 <small>${x.sub}</small>
             </button>`;
     });

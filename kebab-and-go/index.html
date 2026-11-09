@@ -15,17 +15,26 @@
 
 <body>
 
+    <!-- Navegación fija, visible al desplazar la página -->
+    <nav class="nav-global" aria-label="Navegación principal">
+        <a class="nav-marca" href="#inicio" onclick="ir('inicio'); return false;">
+            <img src="assets/logo.png" alt="" width="40" height="40">
+            <span>KEBAB <strong>&amp;GO</strong></span>
+        </a>
+        <div class="nav-acciones">
+            <button class="btn-nav-pedido" type="button" onclick="ir('menu')">Hacer pedido →</button>
+            <button class="btn-tema" type="button" aria-label="Cambiar modo de color">Modo claro</button>
+        </div>
+    </nav>
+
     <!-- ==================== PANTALLA 1: INICIO ==================== -->
     <div id="inicio">
 
         <section class="hero">
 
-            <video class="hero-video" autoplay muted loop playsinline poster="assets/poster.jpg">
-                <source src="assets/video.mp4" type="video/mp4">
-            </video>
+            <!-- Fondo de portada: no requiere vídeo ni imagen externa -->
+            <div class="hero-decoracion" aria-hidden="true">🌯</div>
             <div class="hero-capa"></div>
-
-            <button class="btn-tema" type="button">Modo claro</button>
 
             <div class="hero-contenido">
                 <img class="logo" src="assets/logo.png" alt="Logo de KEBAB&GO">
@@ -81,6 +90,26 @@
             </div>
         </section>
 
+        <!-- Vídeo conceptual pendiente de entrega por el equipo -->
+        <section class="video-conceptual" id="video-conceptual" aria-labelledby="titulo-video">
+            <div class="video-intro">
+                <p class="eyebrow">CONOCE EL PROYECTO</p>
+                <h2 id="titulo-video">Un kebab. Muchas opciones. Una decisión.</h2>
+                <p>En un minuto descubrirás cómo Kebab &amp; Go ayuda a comparar sin saltar de una aplicación a otra.</p>
+            </div>
+            <div class="video-pendiente">
+                <span aria-hidden="true">▶</span>
+                <p>Próximamente: vídeo conceptual del equipo</p>
+                <small>Cuando esté listo, sustituiremos este bloque por el vídeo definitivo.</small>
+            </div>
+        </section>
+
+        <section class="cta-final">
+            <h2>¿Ya sabes qué kebab te apetece?</h2>
+            <p>Prueba nuestra demo y descubre cuánto cambia el precio según cómo lo pidas.</p>
+            <button class="btn-grande" type="button" onclick="ir('menu')">Empezar a comparar →</button>
+        </section>
+
     </div>
 
     <!-- ==================== PANTALLAS 2 Y 3: COMPARADOR ==================== -->
@@ -89,14 +118,6 @@
         <div class="wrap">
 
             <header>
-                <div class="header-top">
-                    <a class="marca" href="#" onclick="ir('inicio'); return false;">
-                        <img src="assets/logo.png" alt="">
-                        <h1>KEBAB <span>&amp;GO</span></h1>
-                    </a>
-                    <button class="btn-tema" type="button">Modo claro</button>
-                </div>
-
                 <p>Compara tu pedido: recoger en local vs. apps de reparto</p>
                 <span class="sim">Prototipo de simulación · precios ficticios</span>
             </header>
