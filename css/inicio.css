@@ -175,3 +175,24 @@
  .logo { width: 75px; }
  .como { padding: 40px 16px; }
 }
+
+/* ---------- Nuestro equipo ---------- */
+.equipo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 20px 65px;
+    text-align: center;
+}
+
+.equipo h2 {
+    margin: 0 0 24px;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.equipo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--bd);
+    border-bottom: 4px solid var(--ac);
+}
